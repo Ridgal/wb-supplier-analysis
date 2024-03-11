@@ -1,0 +1,1 @@
+export const API_URL = 'http://89.111.152.110:8001/api/v1/auth/';
