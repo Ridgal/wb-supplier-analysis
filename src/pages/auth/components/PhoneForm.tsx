@@ -28,7 +28,7 @@ const PhoneForm: React.FC = () => {
     <section className="min-h-full sm:min-h-0 flex flex-col justify-center sm:flex-none">
       <div className="flex justify-center sm:justify-start">
         <img
-          className="mx-auto w-20 h-20 sm:mt-4 sm:ml-4 sm:mr-4"
+          className="mx-auto w-20 h-20 sm:w-10 sm:h-10 sm:mt-4 sm:ml-4 sm:mr-4"
           src={logo}
           alt="Your Company"
         />
@@ -66,7 +66,7 @@ const PhoneForm: React.FC = () => {
             </form>
             <div className="flex flex-col mt-6 sm:mx-auto sm:w-full">
               <div className="w-full border border-zinc-400"></div>
-              <p className="relative bg-background font-semibold w-16 px-4 top-[-13px] left-[45%] sm:left-[42%] font-Benzim-bold">
+              <p className="relative bg-backgroundBasic font-semibold w-16 px-4 top-[-13px] left-[45%] sm:left-[42%] font-Benzim-bold">
                 ИЛИ
               </p>
             </div>
