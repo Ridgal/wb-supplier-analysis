@@ -391,7 +391,7 @@ const Seller = () => {
                   <div className="">
                     <p className="text-base 4xl:text-sm font-bold truncate">Сумма остатков</p>
                     <span className="flex justify-around">
-                      <p className="text-xl 4xl:text-lg xl:text-base text-basic font-bold">1 000 000 ₽</p>
+                      <p className="text-xl 4xl:text-lg 3xl:text-sm text-basic font-bold">1 000 000 ₽</p>
                       <img className="2xl:w-5 2xl:h-5" src={traidingIcon} alt="" />
                     </span>
                   </div>
