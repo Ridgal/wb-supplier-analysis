@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
 import telegramIcon from '../../../assets/pages/auth/telegramIcon.svg';
 import { useAppDispatch, useAppSelector } from '../../../hooks/hooks';
@@ -39,7 +39,9 @@ const PhoneForm: React.FC = () => {
             <h2 className="mt-10 text-center sm:text-start text-3xl font-extrabold tracking-wide font-Benzim-bold leading-9">
               Добро пожаловать!
             </h2>
-            <h4 className="font-Benzim-medium sm:text-start tracking-wider text-zinc-400 mt-2">Введите номер телефона для входа или регистрации</h4>
+            <h4 className="font-Benzim-medium sm:text-start tracking-wider text-zinc-400 mt-2">
+              Введите номер телефона для <Link to="/home">входа</Link>  или регистрации
+            </h4>
           </div>
           <div className="w-[40rem] mt-10 sm:mt-8 sm:mx-auto sm:w-full">
             <form className="space-y-4" action="#" method="POST" onSubmit={onSubmit}>
