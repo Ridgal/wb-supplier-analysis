@@ -1,4 +1,6 @@
-const Search = () => {
+import RectangleFive from '../../../../assets/pages/home/TopOrdered//RectangleFive.svg';
+
+const AnalysisForm = () => {
   return (
     <section className="min-h-full mt-[10%] sm:min-h-0 flex flex-col justify-center sm:flex-none">
       <div className="min-h-full sm:mt-20">
@@ -13,29 +15,27 @@ const Search = () => {
           </div>
           <div className="w-[40rem] mt-4 sm:mt-8 sm:mx-auto sm:w-full">
             <form className="space-y-4" action="#" method="POST">
-              <div>
-                <div className="mt-2 relative">
-                  <input
-                    id="login"
-                    type="text"
-                    placeholder="Номер телефона"
-                    required
-                    className="block w-full placeholder:font-semibold placeholder: font-Exo2 placeholder:text-zinc-300 rounded-xl border-0 px-2.5 py-5 shadow-sm bg-neutral-800 outline-0 text-xl sm:leading-6"
-                  />
-                </div>
+              <div className="mt-2 relative">
+                <input
+                  id="login"
+                  type="text"
+                  placeholder="Артикул"
+                  required
+                  className="block w-full h-16 placeholder:font-semibold text-center font-Exo2 placeholder:text-zinc-300 rounded-xl border-0 px-2.5 py-5 shadow-sm bg-neutral-800 outline-0 text-xl sm:leading-6"
+                />
               </div>
-
             </form>
-            <button className="flex items-center rounded-xl py-5 px-2.5 mt-4 w-full bg-bg_icon">
+            <button className="flex items-center h-16 rounded-xl py-2 px-2.5 mt-4 w-full bg-bg_icon">
               <img
-                className="mr-4"
-                src="Xbox"
+                className="mr-4 w-16 h-12"
+                src={RectangleFive}
                 alt="telegramIcon"
               />
               <div className="text-left">
-                <p className="font-extralight font-Benzim-bold text-xl text-white">Telegram</p>
+                <p className="font-extralight font-Benzim-bold text-xl text-white">
+                  Название товара
+                </p>
               </div>
-              {/* <p>{phoneNumber}</p> */}
             </button>
             <div className="w-full mt-4 text-xs text-zinc-400 font-Benzim-medium leading-tight text-center">
               <p>Продолжая, вы подтверждаете, что ознакомились с <span className="underline">политикой конфиденцальности</span> и <span className="underline">публичной офертой</span></p>
@@ -47,4 +47,4 @@ const Search = () => {
   )
 }
 
-export { Search };
+export { AnalysisForm };

@@ -1,7 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import { Header } from "../../widgets/header/Header";
 import { Sidebar } from "../../widgets/sidebar/Sidebar";
-import { Search } from "./components/Search/Search";
+import { AnalysisForm } from "./components/AnalysisForm/AnalysisForm";
+import { Dashboard } from "./components/Dashboard";
 
 export const Analysis = () => {
   return (
@@ -15,7 +16,8 @@ export const Analysis = () => {
         </section>
         <section className="flex flex-col w-[90%] h-full mt-4 xl:w-[88%] lg:w-[87%] xl:ml-12 lg:ml-28 md:hidden">
           <Routes>
-            <Route path="/search" element={<Search />} />
+            <Route path="/form" element={<AnalysisForm />} />
+            <Route path="/dashboard/*" element={<Dashboard />} />
           </Routes>
         </section>
       </div>

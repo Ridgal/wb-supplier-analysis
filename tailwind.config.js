@@ -29,6 +29,8 @@ export default {
         second: '#02A46D',
         border: '#2F2F2F',
         backgroundBasic: '#171717',
+        bg_table: '#121212',
+        bg_classic: '#282828',
       },
       fontFamily: {
         Exo2: ["'Exo 2', sans-serif"],

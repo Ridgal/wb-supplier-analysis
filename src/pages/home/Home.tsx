@@ -24,8 +24,6 @@ const Home = () => {
         <Header />
       </section>
       <div className="flex">
-
-
         <section className="w-[10%] lg:w-0 h-full md:mt-0 md:w-0">
           <Sidebar />
         </section>
@@ -88,6 +86,7 @@ const Home = () => {
 
         </div>
 
+        {/* //Mobile */}
         <div className="hidden w-full md:block">
           <div className="h-full ">
             <div className="flex flex-col w-full">
@@ -112,7 +111,9 @@ const Home = () => {
               <TopOrdered />
             </div>
             <div className="w-full flex justify-center mt-4">
-              <p className="font-Exo2 text-zinc-600">Что бы видеть чистую прибыль укажите себестоимость в разделе товары</p>
+              <p className="font-Exo2 text-zinc-600">
+                Что бы видеть чистую прибыль укажите себестоимость в разделе товары
+              </p>
             </div>
             <div className="h-80"></div>
           </div>
