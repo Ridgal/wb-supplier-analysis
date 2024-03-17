@@ -18,7 +18,7 @@ const Header = () => {
         <nav className="flex justify-between items-center w-[90%] xl:w-[80%] md:w-full">
 
           <ul className="flex items-center gap-10 md:hidden 2xl:gap-6 xl:gap-4 px-2 mr-40 xl:mr-20 lg:mr-0">
-            <li><Link className="text-lg text-basic hover:text-main transition-colors 2xl:text-base" to="/">Главная</Link></li>
+            <li><Link className="text-lg text-basic hover:text-main transition-colors 2xl:text-base" to="/home">Главная</Link></li>
             <li><Link className="text-lg hover:text-basic transition-colors 2xl:text-base xl:text-sm" to="/">Тарифы</Link></li>
             <li><Link className="text-lg hover:text-basic transition-colors 2xl:text-base xl:text-sm" to="/">О нас</Link></li>
             <li><Link className="text-lg hover:text-basic transition-colors 2xl:text-base xl:text-sm" to="/">Контакты</Link></li>
