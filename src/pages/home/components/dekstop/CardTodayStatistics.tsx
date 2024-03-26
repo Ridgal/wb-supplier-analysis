@@ -1,6 +1,5 @@
-import traidingIcon from '../../../../assets/general/svg/traiding-up.svg';
-import { LineChart } from '../../../../components/generics/LineChart';
-// import { CardChart } from './ChartCardToday';
+import traidingIcon from '@/assets/general/svg/traiding-up.svg';
+import { LineChart } from '@/components/generics/LineChart';
 
 const CardTodayStatistics = () => {
   return (
