@@ -1,8 +1,8 @@
 import { Link, Route, Routes } from "react-router-dom";
 import image from '../../../assets/general/images/image.png';
-import { Positions } from "./Positions/Positions";
-import { Products } from "./Products/Products";
-import { Seller } from "./Seller/Seller";
+import { Positions } from "./Positions";
+import { Products } from "./Products";
+import { Seller } from "./Seller";
 
 const Dashboard = () => {
   return (

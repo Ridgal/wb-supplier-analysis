@@ -1,9 +1,11 @@
-// import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Analysis } from '../pages/analysis/Analysis';
-import { Auth } from '../pages/auth/Auth';
-import { Home } from '../pages/home/Home';
 import './App.css';
+
+import { ProtectedRoute } from '../components/generics/ProtectedRoute/ProtectedRoute';
+import { LoginForm } from '../pages/auth/components/LoginForm';
+import { PhoneForm } from '../pages/auth/components/PhoneForm';
+import { RegistrationForm } from '../pages/auth/components/RegistrationForm';
+import { Pages } from '../pages/Pages';
 
 const App = () => {
 
@@ -29,12 +31,23 @@ const App = () => {
     //   return () => clearTimeout(timeout);
     // }, [])
 
+    console.log(3)
+
   return (
     <>
       <Routes>
-        <Route path="/*" element={<Auth />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/analysis/*" element={<Analysis />}/>
+        <Route path="*"
+            element={
+              <ProtectedRoute>
+                <Pages />
+              </ProtectedRoute>
+            }
+          />
+        <Route path="/auth/phone" element={<PhoneForm />} />
+        <Route path="/auth/register" element={<RegistrationForm />} />
+        <Route path="/auth/login" element={<LoginForm />} />
+
+
       </Routes>
     </>
   );

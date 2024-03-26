@@ -28,10 +28,10 @@ const Sidebar = () => {
         </div>
 
         <div className="md:hidden">
-          <Link to="/analysis/dashboard/product" className="flex justify-center items-center px-2 active:bg-bg_icon rounded-2xl w-12 h-[2.8rem]">
+          <Link to="/analysis/form" className="flex justify-center items-center px-2 active:bg-bg_icon rounded-2xl w-12 h-[2.8rem]">
             <img className="w-5 h-5" src={dashboard_icon} alt=""/>
           </Link>
-          <Link to="" className="flex justify-center items-center px-2 active:bg-bg_icon rounded-2xl w-12 h-[2.8rem]">
+          <Link to="/promotion" className="flex justify-center items-center px-2 active:bg-bg_icon rounded-2xl w-12 h-[2.8rem]">
             <img className="w-5 h-5" src={traffic_icon} alt=""/>
           </Link>
           <Link to="" className="flex justify-center items-center px-2 active:bg-bg_icon rounded-2xl w-12 h-[2.8rem]">
